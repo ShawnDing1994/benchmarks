@@ -21,16 +21,16 @@ from __future__ import print_function
 import sys
 import unittest
 
-from absl import app
-from absl import flags as absl_flags
-
 import all_reduce_benchmark_test
 import allreduce_test
 import benchmark_cnn_distributed_test
-import benchmark_cnn_test
 import cnn_util_test
 import variable_mgr_util_test
+from absl import app
+from absl import flags as absl_flags
+
 from models import nasnet_test
+from tests import benchmark_cnn_test
 
 
 # Ideally, we wouldn't need this option, and run both distributed tests and non-
